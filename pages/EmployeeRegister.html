@@ -75,9 +75,9 @@
                     </div>
                 </div>
                 <div class="row-content">
-                    <lable class="label text" for="name">Choose your salary</lable>
-                    <input class="input" type="range" name="salary" min="600000" max="900000" step="1000" value="700000">
-                    <output class="salary-output text" for="salary">700000</output>
+                    <label class="label text" for="salary">Choose your salary</label>
+                    <input class="input" type="range" id="salary" min="600000" max="900000" step="1000" value="700000">
+                    <output class="salary-output text" id="salary-output">700000</output>
                 </div>
                 <!-- UC5 – Employee roll Form with start date-->
                 <div class="row-content">
@@ -170,6 +170,16 @@
                         <input type="reset" value="Reset" class="button btn-ux-design resetButton">
                     </div>
                 </div>
+                <!-- UC8- Ability to Set Event Listener on Salary Range to display appropriate value -->
+                <script>
+                    let salary=document.querySelector('#salary');
+                    let output=document.querySelector('#salary-output');
+                    output.textContent=salary.value;
+                    salary.addEventListener('input',function()
+                    {
+                      output.textContent=salary.value;
+                    });
+                </script>
             </form>
         </div>
     </body>
