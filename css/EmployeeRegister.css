@@ -123,3 +123,15 @@ body
     border-radius: 50%;
     margin-left: 12px;
 }
+/* UC5 – Employee roll Form with start date*/
+select
+{
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    resize: vertical;
+    font: normal normal 16px Roboto;
+    letter-spacing: 0px;
+    color: #42515f;
+    background-color: transparent;
+}
